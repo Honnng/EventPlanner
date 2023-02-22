@@ -56,7 +56,7 @@ public class MySortedArray<T extends Comparable<T>> {
 	 */
 	public int size() {	
 		
-		return this.size; //default return, remove/change as needed
+		return this.size; 
 
 	}  
 	
@@ -66,7 +66,7 @@ public class MySortedArray<T extends Comparable<T>> {
 	 */
 	public int capacity() { 
 		
-		return data.length; //default return, remove/change as needed
+		return data.length; 
 	}
 
 	/**
@@ -117,7 +117,7 @@ public class MySortedArray<T extends Comparable<T>> {
 		if(index >= this.size() || index < 0){
 			throw new IndexOutOfBoundsException("Index " + index + " out of bounds!");
 		}
-		return data[index]; //default return, remove/change as needed
+		return data[index]; 
 
 	}
 
@@ -209,7 +209,6 @@ public class MySortedArray<T extends Comparable<T>> {
 		data[index] = value;
 		this.size += 1;
 		return true;
-		//default return, remove/change as needed
 	} 
 	
 	/**
@@ -233,7 +232,7 @@ public class MySortedArray<T extends Comparable<T>> {
 		if(this.size() <= (this.capacity() / 3)){
 			this.halveCapacity();
 		}
-		return result; //default return, remove/change as needed
+		return result;
 	}  
 
 	/**
