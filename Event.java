@@ -5,7 +5,6 @@
  */
 public class Event implements Comparable<Event> {
 
-	//starting and ending time of the event
 	/**
 	 * Start time.
 	 */
@@ -90,7 +89,7 @@ public class Event implements Comparable<Event> {
 	public MyTime getStart(){
 		// report starting time
 
-		return this.startTime; //default return, remove/change as needed
+		return this.startTime; 
 	}
 	
 	/**
@@ -100,7 +99,7 @@ public class Event implements Comparable<Event> {
 	public MyTime getEnd(){
 		// report starting time
 
-		return this.endTime; //default return, remove/change as needed
+		return this.endTime; 
 	}
 
 	/**
@@ -110,7 +109,7 @@ public class Event implements Comparable<Event> {
 	public String getDescription(){
 		// report description
 		
-		return this.description; //default return, remove/change as needed
+		return this.description; 
 	}
 	
 	/**
@@ -130,7 +129,7 @@ public class Event implements Comparable<Event> {
 			throw new IllegalArgumentException("Null Event object!");
 		}
 		int result = this.getStart().compareTo(otherEvent.getStart());
-		return result; //default return, remove/change as needed
+		return result; 
 
 	}
 
@@ -180,7 +179,7 @@ public class Event implements Comparable<Event> {
 			this.endTime = newEnd;
 			return true;
 		}
-		//return false; //default return, remove/change as needed
+		
 	
 	}
 	
@@ -208,7 +207,7 @@ public class Event implements Comparable<Event> {
 	 */
 	public String toString(){
 		String result = this.getStart().toString() + "-" + this.getEnd().toString() + "/" + this.getDescription();
-		return result; //default return, remove/change as needed
+		return result; 
 	
 	}
 	
